@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/solvecases.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a865b4fbb.js" crossorigin="anonymous"></script>
+    <title>SBH Webapp</title>
+</head>
+
+<!-- onload funksjon for å hente cases fra localStorage -->
+<body onLoad="getInfo()">
+
+
+    <!-- Nav bar -->
+    <div id="slideout-menu">
+        <ul>
+            <li>
+                <a id="active" href="sbh.html">Hjem</a>
+            </li>
+            <li>
+                <a href="saksbehandler.html">Saksbehandler</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <nav id="navbar">
+        <div id="logo">
+            <a href="sbh.html"><img src="img/logo.png" alt="PST Logo."></a>
+        </div>
+
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li>
+                <a id="active" href="sbh.html">Hjem</a>
+            </li>
+            <li>
+                <a href="saksbehandler.html">Saksbehandler</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- Banner -->
+    <div id="banner">
+        <img id="pst-banner" src="img/SBH.png" alt="SBH logo som websidens banner.">
+    </div>
+
+
+
+    <!-- Selve innholdet på websiden -->
+    <main>
+        <h2>Siste saker</h2>
+
+        <!-- Grid for innhold på websiden -->
+        <div id="grid-container" class="grid-container">
+        </div>
+
+        <h2>Din sak</h2><br>
+        <div id="output-form">
+            <p id="output-p"></p>
+        </div>
+    </main>
+
+    <!-- Til toppen knapp -->
+    <button onclick="toTopFunction()" id="to-top-btn" class="btn" title="Gå til toppen">Til toppen</button>
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div id="left-footer">
+            <h6>Linker</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="sbh.html">Hjem</a>
+                        </li>
+                        <li>
+                            <a href="saksbehandler.html">Saksbehandler</a>
+                        </li>
+                    </ul>
+                </p>
+        </div>
+
+        <div id="right-footer">
+            <article>
+                <h6>Denne websiden er ikke assosiert med Politiet eller PST på noen som helst måte.</h6>
+                <p>Kontakt <a href = "mailto: daniel_moen@outlook.com"><i class="far fa-envelope"></i> daniel_moen@outlook.com</a> om du ønsker denne fjernet.</p>
+            </article>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cases.js"></script>
+
+
+</body>
+
+</html>

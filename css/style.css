@@ -1,0 +1,487 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+main {
+    width: 92%;
+    margin-left: 4%;
+}
+
+/* Titler */
+h1 {
+    padding: 8px;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 100px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Underoverskrifter */
+h2 {
+    font-size: 40px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tittel på saker */
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+/* Datoer */
+h4 {
+    font-size: 15px;
+    color: black;
+}
+
+/* Sakstyper */
+h5 {
+    color: #c3c3c3;
+    font-size: 12px;
+    font-style: italic;
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+/* Footer tekst */
+h6 {
+    padding: 1px;
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    line-height: 1.5;
+}
+
+span {
+    background-color: white;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+
+/* Banner */
+#banner {
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url(img/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+
+
+
+
+
+/* Navigation */
+/* Sort navigasjonsbar for kontraster - UU */
+nav {
+    height: 50px;
+    background: black;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.4s ease;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    right: 0;
+}
+
+#active {
+    color: #AAAAAA;
+}
+
+
+
+
+/* Logo */
+#logo img {
+    position: fixed;
+    height: 49.5px;
+    top: 0;
+    left: 2px;
+}
+
+
+
+
+/* Hamburgermeny */
+#menu-icon {
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+
+
+/* Slideout Meny */
+#slideout-menu {
+    display: none;
+    background: black;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#slideout-menu ul {
+    list-style: none;
+    padding: 0 30px;
+}
+
+#slideout-menu ul li {
+    padding: 6px;
+}
+
+#slideout-menu a {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 2px;
+}
+
+.grid-container img {
+    width: 100%;
+}
+
+/* Grid for saksbehandlern */
+.grid-sak {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 2px;
+}
+
+.grid-sak img {
+    width: 100%;
+}
+
+
+
+
+
+/* Buttons */
+.btn {
+    padding: 8px 24px;
+    border-radius: 2px;
+    border: 2px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+}
+
+.btn:hover {
+    background: black;
+    text-decoration: none;
+    color: white;
+}
+
+#to-top-btn {
+    position: relative;
+    left: 45%;
+}
+
+
+
+
+/* Formstyling */
+.case-input {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+}
+
+#case-description {
+    height: 15vh;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background: black;
+    color: #eee;
+    display: flex;
+    width: 100%;
+}
+
+footer a {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all 0.4s ease;
+    padding: 3px;
+}
+
+/*footer a:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover:after {
+    width: 100%;
+}*/
+
+/* Venstre footer */
+footer #left-footer {
+    flex: 1;
+    border-right: 1px solid #eee;
+    padding-left: 32px;
+    font-size: 15px;
+}
+
+footer #left-footer ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+/* Høyre footer */
+footer #right-footer {
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+}
+
+footer #social-media-footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer #social-media-footer ul li {
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+/* Sosiale media footers ikoner */
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-twitter,
+footer #social-media-footer a .fa-linkedin {
+    color: white;
+    transition: 0.4s;
+}
+
+
+/* Footer ikoners hover farger */
+footer #social-media-footer ul li:hover a .fa-facebook {
+    color: #3b5998;
+}
+
+footer #social-media-footer ul li:hover a .fa-twitter {
+    color: #1da1f2;
+}
+
+footer #social-media-footer ul li:hover a .fa-linkedin {
+    color: #2867B2;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+
+    #slideout-menu {
+        display: block;
+    }
+
+    #new-case-img {
+        display: none;
+    }
+
+    .grid-sak {
+        display: block;
+        width: 95%;
+        padding: 2px;
+    }
+
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+}
+
+/* Desktop */
+@media(min-width: 1200px) {
+
+}
+
+/* Tablet */
+@media (max-width: 719px) {
+    section {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #left-footer {
+        flex: 1;
+        border-right: 0;
+        padding-left: 0;
+    }
+
+    footer #right-footer {
+        color: white
+    }
+
+    footer #right-footer a {
+        color: white
+    }
+
+    footer #social-media-footer a .fa-facebook,
+    footer #social-media-footer a .fa-twitter,
+    footer #social-media-footer a .fa-instagram {
+        color: white
+    }
+}
+
+/* Telefon */
+@media (max-width:600px) {
+
+    main {
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    #banner h6 {
+        font-size: 20px;
+    }
+
+    #to-top-btn {
+        position: relative;
+        left: 40%;
+    }
+}

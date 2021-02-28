@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="http://example.com/favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a865b4fbb.js" crossorigin="anonymous"></script>
+    <title>SBH Webapp</title>
+</head>
+
+<!-- onload funksjon for å hente cases fra localStorage -->
+<body onLoad="getInfo()">
+
+
+    <!-- Nav bar -->
+    <div id="slideout-menu">
+        <ul>
+            <li>
+                <a href="sbh.html">Hjem</a>
+            </li>
+            <li>
+                <a id="active" href="saksbehandler.html">Saksbehandler</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <nav id="navbar">
+        <div id="logo">
+            <a href="sbh.html"><img src="img/logo.png" alt="PST Logo."></a>
+        </div>
+
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="sbh.html">Hjem</a>
+            </li>
+            <li>
+                <a id="active" href="saksbehandler.html">Saksbehandler</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- Banner -->
+    <div id="banner">
+        <img id="pst-banner" src="img/SBH.png" alt="SBH logo som websidens banner.">
+    </div>
+
+
+
+
+    <main>
+        <h2>Din sak</h2><br>
+        <div id="output-form">
+            <p id="output-p"></p>
+        </div>
+
+
+
+
+
+
+
+        <h2>Opprett sak</h2><br>
+        <div class="grid-sak">
+            <div class="grid-item-sak">
+                <img src="img/new-case-picture.jpg" id="new-case-img">
+            </div>
+
+            <div class="grid-item-sak">
+                <form>
+                    Tittel:<br>
+                    <input type="text" id="case-title" class="case-input"><br>
+                    <br>
+                    Dato:<br>
+                    <Dato:<br>
+                        <input type="date" id="case-date" class="case-input"><br>
+                        <br>
+                        Beskrivelse:<br>
+                        <input type="textarea" id="case-description" class="case-input"><br>
+                        <br>
+                        Type sak:<br>
+                        <input type="textarea" rows = "5" cols = "60" id="case-type" class="case-input"
+                            placeholder="Spionasje, cyberkriminalitet, tyveri.."><br>
+                        <br>
+                        <button onclick="storeInfo()" class="btn" id="submit-case-btn" value="submit">Publiser
+                            sak</button>
+                </form>
+            </div>
+    </main>
+
+
+
+    <br>
+    <!-- Til toppen knapp -->
+    <button onclick="toTopFunction()" id="to-top-btn" class="btn" title="Gå til toppen">Til toppen</button>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div id="left-footer">
+            <h6>Linker</h3>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="sbh.html">Hjem</a>
+                        </li>
+                        <li>
+                            <a href="saksbehandler.html">Saksbehandler</a>
+                        </li>
+                    </ul>
+                </p>
+        </div>
+
+        <div id="right-footer">
+            <article>
+                <h6>Denne websiden er ikke assosiert med Politiet eller PST på noen som helst måte.</h6>
+                <p>Kontakt <a href = "mailto: daniel_moen@outlook.com"><i class="far fa-envelope"></i> daniel_moen@outlook.com</a> om du ønsker denne fjernet.</p>
+            </article>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cases.js"></script>
+
+
+</body>
+
+</html>
+
+
+    <script src="scripts/TweenMax.min.js"></script>
+    <script src="scripts/TimelineMax.min.js"></script>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cases.js"></script>
+</body>
+
+</html>
